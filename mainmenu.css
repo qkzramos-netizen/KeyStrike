@@ -1,0 +1,118 @@
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 1, 58);
+
+    min-height: 100vh;
+    margin: 0;
+    animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    }
+
+    .mainmenu {
+        font-family: "IM Fell French Canon", sans-serif;
+        color: white;
+        font-size: 55px;
+    }
+
+    .playmenu {
+        position: relative;
+        overflow: hidden;
+
+
+        font-family: "IM Fell French Canon", sans-serif;
+        font-weight: bold;
+        width: 280px;
+        height: 68px;
+        border-radius: 12px;
+        border: none;
+        background-color: rgba(5, 224, 97, 0.788);
+    }
+
+    .playmenu::before {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+
+            background-image: url("piano.png");
+            background-size: cover;
+            background-position: center;
+
+            opacity: 0.2;
+    }
+
+    .playmenu a {
+        position: relative;
+        z-index: 1;
+
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+    .stats {
+        font-family: "IM Fell French Canon", sans-serif;
+        font-weight: bold;
+        width: 280px;
+        height: 68px;
+        border-radius: 12px;
+        background-color: rgba(214, 158, 3, 0.788);
+    }
+
+    .stats a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .settings {
+        font-family: "IM Fell French Canon", sans-serif;
+        font-weight: bold;
+        width: 280px;
+        height: 68px;
+        border-radius: 12px;
+        background-color: rgba(214, 158, 3, 0.788);
+    }
+
+    .settings a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .back {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        
+        font-size: 24px;
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+
+        transition: transform 0.2s ease;
+    }
+
+    .back a {
+            text-decoration: none;
+        color: white;
+    }
+
+    .back:hover {
+        transform: scale(1.2);
+    }
+
+    .back:active {
+        transform: scale(1.35);
+    }
