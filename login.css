@@ -1,0 +1,167 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 1, 58);
+
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    min-height: 90vh;
+
+    border: 2px solid rgb(1, 1, 114);
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Musician {
+  font-family: "IM Fell French Canon", sans-serif;
+  font-weight: bold;
+  color: rgb(1, 1, 114);
+  margin-bottom: 0;
+}
+
+.Log {
+ font-family: "Inter", sans-serif;
+ font-weight: lighter;
+ font-size: 19px;
+ color: rgb(0, 0, 128);
+ margin-top: 0;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+    font-size: 24px;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.back:hover {
+    transform: scale(1.2);
+}
+
+.back:active {
+    transform: scale(1.35);
+}
+
+.forgot {
+    width: 271px;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin: 3px 0 10px;
+}
+
+input {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 10px 14px;
+
+    border: 1px solid #2544cc;
+    border-radius: 12px;
+    margin: 1px 0;
+}
+
+input:focus {
+  border-color: #5c4328;
+  box-shadow: 0 0 8px rgba(7, 231, 220, 0.25);
+}
+
+input::placeholder {    
+  color: rgb(0, 0, 128);
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.login {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    width: 271px;
+    height: 45px;
+    font-size: 19px;
+    border-radius: 12px;
+    background-color: rgb(2, 2, 104);
+}
+
+.login a,
+.Google a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+}
+
+.Google a {
+     color: rgb(0, 0, 128);
+    text-decoration: none;
+}
+
+.Google {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    width: 271px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.alre {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    color: rgb(1,1,114);
+}
+
+.lg {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(1,1,114);
+}
+
+
+
+
